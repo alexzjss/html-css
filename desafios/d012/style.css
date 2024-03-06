@@ -1,57 +1,59 @@
 @charset "UTF-8";
 
-h1 {
-    font-family: 'Passion One';
-    font-weight: bold;
-}
-
-p {
-    font-family: 'Sriracha';
-}
-
-body {
+* {
     margin: 0px;
     padding: 0px;
-    border: 3px solid black;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-    padding-top: 25px;
-    min-height: 100px;
 }
-
 header h1 {
-    font-size: 3em;
-    margin-top: -15px;
-    padding: 10px;
+    font-family: 'Passion One', cursive;
+    font-size: 10vw;
+    padding-top: 50px;
+    font-variant: small-caps;
 }
-
 header p {
-    font-size: 15px;
-    font-family: 'Passion One';
-    font-weight: normal;
-    color: rgb(230, 230, 230);
-    margin-top: -25px;
+    padding-bottom: 50px;
 }
 
-p {
-    padding: 0px 10px 5px 10px;
-    padding-right: 100px;
+section {
+    background-color: white;
+    font-family: 'Sriracha', cursive;
+    font-size: 3.5vw;
+    line-height: 2em;
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
-
-div.image {
-    display: inline-block;
-    background-color: black;
-    width: auto;
-    height: 300px;
-}
-.txtimg {
+section.image {
     color: white;
-    font-size: 15px;
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: darkgray;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.445);
+}
+section.image p {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+    border-radius: 5px;
 }
 #bloco1 {
     background-image: url(imagens/background001.jpg);
@@ -66,4 +68,11 @@ div.image {
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
 }
