@@ -10,18 +10,33 @@
         }
         table {
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+        caption {
+            background-color: lightgray;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px 10px 10px 10px;
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
-
         }
-        thead {
-            
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         td.num {
             text-align: right;
@@ -33,6 +48,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABELA
+            CAPTION
             THEAD
                 TR,TD,TH
             TBODY
@@ -41,12 +57,19 @@
                 TR,TD,TH
     -->
     <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
                 </tr>
             </thead>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="num"><strong>203 062 512</strong></td>
+                </tr>
+            </tfoot>
             <tbody>
                 <tr>
                     <td>São Paulo</td>
@@ -157,12 +180,18 @@
                     <td class="num">636 707</td>
                 </tr>
             </tbody>
-            <tfoot>
-                <tr>
-                    <th>Total de Habitantes</th>
-                    <td class="num"><strong>203 062 512</strong></td>
-                </tr>
-            </tfoot>
     </table>
+
+    <h2>Estados do Brasil</h2>
+    
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero nulla, excepturi aperiam voluptatum beatae sapiente praesentium eum maxime, blanditiis iste atque earum nobis illo cum dolor sequi, quis voluptatem quam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid tempore, eaque architecto ab maxime laborum molestiae repellendus saepe iure corrupti eius dignissimos minus, maiores quia voluptatibus deleniti. Inventore, necessitatibus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore libero tempore facere consequuntur ratione. A tempora fugiat nobis, ipsum commodi error provident corrupti quae at ea ab quo obcaecati omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laboriosam odio magnam nulla inventore, porro consequuntur dolorum architecto cupiditate possimus voluptatem saepe error asperiores labore non deserunt, dignissimos harum recusandae.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero nulla, excepturi aperiam voluptatum beatae sapiente praesentium eum maxime, blanditiis iste atque earum nobis illo cum dolor sequi, quis voluptatem quam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid tempore, eaque architecto ab maxime laborum molestiae repellendus saepe iure corrupti eius dignissimos minus, maiores quia voluptatibus deleniti. Inventore, necessitatibus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore libero tempore facere consequuntur ratione. A tempora fugiat nobis, ipsum commodi error provident corrupti quae at ea ab quo obcaecati omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laboriosam odio magnam nulla inventore, porro consequuntur dolorum architecto cupiditate possimus voluptatem saepe error asperiores labore non deserunt, dignissimos harum recusandae.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero nulla, excepturi aperiam voluptatum beatae sapiente praesentium eum maxime, blanditiis iste atque earum nobis illo cum dolor sequi, quis voluptatem quam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid tempore, eaque architecto ab maxime laborum molestiae repellendus saepe iure corrupti eius dignissimos minus, maiores quia voluptatibus deleniti. Inventore, necessitatibus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore libero tempore facere consequuntur ratione. A tempora fugiat nobis, ipsum commodi error provident corrupti quae at ea ab quo obcaecati omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laboriosam odio magnam nulla inventore, porro consequuntur dolorum architecto cupiditate possimus voluptatem saepe error asperiores labore non deserunt, dignissimos harum recusandae.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero nulla, excepturi aperiam voluptatum beatae sapiente praesentium eum maxime, blanditiis iste atque earum nobis illo cum dolor sequi, quis voluptatem quam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid tempore, eaque architecto ab maxime laborum molestiae repellendus saepe iure corrupti eius dignissimos minus, maiores quia voluptatibus deleniti. Inventore, necessitatibus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore libero tempore facere consequuntur ratione. A tempora fugiat nobis, ipsum commodi error provident corrupti quae at ea ab quo obcaecati omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laboriosam odio magnam nulla inventore, porro consequuntur dolorum architecto cupiditate possimus voluptatem saepe error asperiores labore non deserunt, dignissimos harum recusandae.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero nulla, excepturi aperiam voluptatum beatae sapiente praesentium eum maxime, blanditiis iste atque earum nobis illo cum dolor sequi, quis voluptatem quam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid tempore, eaque architecto ab maxime laborum molestiae repellendus saepe iure corrupti eius dignissimos minus, maiores quia voluptatibus deleniti. Inventore, necessitatibus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore libero tempore facere consequuntur ratione. A tempora fugiat nobis, ipsum commodi error provident corrupti quae at ea ab quo obcaecati omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laboriosam odio magnam nulla inventore, porro consequuntur dolorum architecto cupiditate possimus voluptatem saepe error asperiores labore non deserunt, dignissimos harum recusandae.</p>
 </body>
 </html>
