@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe {
+            width: 600px;
+            height: 500px;
+            border: 1px dashed black;            
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando os iframe</h1>
+    <!--
+    Tamanho padrão: 300x150px 
+    Parâmetro: Width, height, scrolling, frameborder
+    -->
+    <p>
+        <a href="https://youtube.com">Site com link normal</a>
+    </p>
+    <p>
+        Acessando
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" width="400">
+            [ Mensagem para o caso do dispositivo ser incompatível.] 
+            ou, pode ser usado diretamente um <a href="https://www.cursoemvideo.com">link</a>.
+        </iframe>
+        com iframe
+    </p>
+    <p>
+        Testando com o Google:
+        <iframe src="https://www.google.com.br" frameborder="0"></iframe>
+        Google possui proteção contra iframes.
+    </p>
+    <p>
+        Ferramenta importante:
+        <iframe src="https://jemimaabu.github.io/random-gradient-generator/" frameborder="0" scrolling="no">Gerador de Gradiente</iframe>
+    </p>
+</body>
+</html>
