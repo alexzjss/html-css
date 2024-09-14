@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/media-query.css">
+</head>
+<body onresize="sizeChange ()">
+    <header>
+        <h1>My Site</h1>
+        <span class="material-symbols-outlined" id="menu" onclick="clickMenu()">
+            lists</span>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Tech</a></li>
+                <li><a href="#">Cinema</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Sports</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Breaking News</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, architecto quo, deserunt, qui debitis voluptatum a veniam saepe excepturi eaque maxime ducimus repellat minus reiciendis? Reiciendis alias fugit facere aspernatur. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi temporibus accusamus vitae inventore quam aut molestias nulla qui dolores quaerat? Neque voluptate ratione vitae. Ex fugit cumque ut mollitia quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptate provident aperiam ipsum eaque laboriosam mollitia nobis quod iusto! Vero facilis illo doloremque laborum ratione excepturi voluptate hic nostrum rerum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatem nisi ratione eos hic, accusantium dolorum, nihil minima perspiciatis soluta rerum architecto, commodi quae pariatur ab ut deserunt omnis aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quis expedita ratione corrupti delectus excepturi odio hic minima, totam nostrum, rerum, accusamus beatae ipsam nisi tempora! Officiis vel nemo dignissimos.</p>
+        </article>
+    </main>
+    <script>
+        function sizeChange() {
+            if (window.innerWidth >= 768) {
+                navbar.style.display = 'block'
+            } else {
+                navbar.style.display = 'none';
+            }
+        }
+
+        function clickMenu() {
+            if (navbar.style.display == 'block') {
+                navbar.style.display = 'none';
+            } else {
+                navbar.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
