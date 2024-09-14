@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit.php" method="post">
+        <p>
+            <label for="year">Tell me when you was born:</label>
+            <input type="number" name="year" id="year" min="1900" max="2024" oninput="calcage()">
+        </p>
+        <p>
+            <label for="age">You are</label>
+            <output id="age">0</output>
+            <label for="age">years old</label>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">   
+        </p>
+    </form>
+
+    <script>
+        function calcage() {
+            let actual = new Date().getFullYear()
+            age.innerHTML = Number(actual) - Number(year.value)
+        }
+    </script>
+</body>
+</html>
